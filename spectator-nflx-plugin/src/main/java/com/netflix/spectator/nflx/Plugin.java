@@ -53,7 +53,7 @@ final class Plugin {
 
       Jmx.registerStandardMXBeans(registry);
     } else {
-      LOGGER.debug("plugin not enabled, set " + ENABLED_PROP + "=true to enable");
+      LOGGER.debug("plugin not enabled, set {}=true to enable", ENABLED_PROP);
     }
   }
 }

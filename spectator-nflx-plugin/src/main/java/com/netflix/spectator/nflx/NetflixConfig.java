@@ -97,7 +97,7 @@ public final class NetflixConfig {
         }
       }
     } catch (IOException e) {
-      LOGGER.warn("failed to load config file: " + name, e);
+      LOGGER.warn("failed to load config file: {}", name, e);
     }
   }
 

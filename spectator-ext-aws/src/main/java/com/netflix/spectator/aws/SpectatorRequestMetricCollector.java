@@ -218,7 +218,7 @@ public class SpectatorRequestMetricCollector extends RequestMetricCollector {
     try {
       return URI.create(u.toString()).getHost();
     } catch (Exception e) {
-      LOGGER.debug("failed to parse endpoint uri: " + u, e);
+      LOGGER.debug("failed to parse endpoint uri: {}", u, e);
       return UNKNOWN;
     }
   }

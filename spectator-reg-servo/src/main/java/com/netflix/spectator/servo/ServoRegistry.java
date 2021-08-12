@@ -58,8 +58,7 @@ public class ServoRegistry extends AbstractRegistry implements CompositeMonitor<
     try {
       minutes = Long.parseLong(v);
     } catch (NumberFormatException e) {
-      LOGGER.error("invalid value for property '" + key + "', expecting integer: '" + v + "'."
-        + " The default value of " + minutes + " minutes will be used.", e);
+      LOGGER.error("invalid value for property '{}', expecting integer: '{}'. The default value of {} minutes will be used.", key, v, minutes, e);
     }
     return TimeUnit.MINUTES.toMillis(minutes);
   }
